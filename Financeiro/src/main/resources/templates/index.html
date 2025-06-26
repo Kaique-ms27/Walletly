@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <script src="../static/js/redirect.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
   </head>
   <body>
-    <header>
-        <main>
-            <div class="image"></div>
-            <section class="welcome">
-                <h1 class="title">Walletly</h1>
-                <p class="subtitle">Seja bem vindo a sua nova vida financeira.</p>
-            </section>
-        </main>
-    </header>
+    <main class="conteiner">
+      <div class="image"></div>
+      <section class="welcome">
+        <h1 class="title">Walletly</h1>
+        <p class="subtitle">Seja bem vindo a sua nova vida financeira.</p>
+        <div class="background">
+          <button onclick="redirect('login')" class="btn-login">Login</button>
+          <button onclick="redirect('sign')" class="btn-sign">Sign</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
